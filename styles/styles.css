@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import url(./header.css);
+@import url(./hero.css);
+
+:root {
+    --primary-color: #333333;
+    --secondary-color: #FFFFFF;
+    --backgorund-color: #000000;
+    --accent-color: #FF0000; 
+    --fonte-principal: "Poppins";
+    --fonte-secundaria: "Black Ops One";
+    --slider-animation-timing: 200ms ease-in-out;
+}
+body{
+    background-color: var(--backgorund-color);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
