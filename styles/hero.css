@@ -1,6 +1,7 @@
 .hero {
     display: flex;
     flex-direction: column;
+    margin: 0 1rem;
 }
 
 .hero-text{
@@ -65,17 +66,27 @@
     border: 1px solid var(--primary-color);
     transform: translateX(8px);
 }
-   
 
+.icons {
+    display: none;
+}
 
-
-
+.scroll-down {
+    display: none;
+}
+.buttons{
+    display:flex;
+    justify-content: center;
+}
 @media screen and (min-width:1024px) {
     .hero {
         display: flex;
         flex-direction: row;
         align-items: center;
         
+    }
+    .hero-img {
+        padding-left: 3rem;
     }
     .hero-img img {
         width:30vw;
@@ -89,6 +100,69 @@
     .hero-text h1{
         font-size: 5.6rem;  
        }
+
+    .buttons{
+        justify-content: flex-start;
+        margin-top:1rem;
+    }   
+   .icons{
+    display: block;
+    position:absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+   } 
+
+   .icons a{
+    text-decoration: none;
+   }
+
+   .icons i{
+      display: block;
+      margin: 1.6rem 0;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: var(--secondary-color);
+      transition: all .50s ease;     
+    }
+   .icons i:hover {
+    color: var(--accent-color);
+    transform: translateY(-5px);
+   }
     
-    
+   .scroll-down{
+     display:block;
+     position: absolute;
+     bottom: -3%;
+     right: 3%;
+   }
+
+   .scroll-down a {
+    text-decoration: none;
+   }
+
+   .scroll-down i{
+    display:block;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    background: var(--primary-color);
+    border-radius: 30px;
+    transition: all .50s ease;   
+   }
+   .scroll-down i:hover {
+    transform: translateY(-5px);
+   }
 }   
+
+@media screen and (min-width: 1728px) {
+
+    .scroll-down{
+        position: absolute;
+        bottom: 3%;
+        right: 5%;
+      }
+      .hero-img {
+        padding-left: 5rem ;
+    }
+}
